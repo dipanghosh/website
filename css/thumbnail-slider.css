@@ -1,0 +1,77 @@
+.container{
+	width: 100% !important;
+	padding: 0 !important;
+}
+.stagebkg{
+	background-image: url(../galleries/flowers/rose-1.jpg);
+	width: 100%;
+	background-repeat: repeat-y;
+	background-size:contain;
+	padding-bottom: 30px;
+}
+.myimagegrid{
+	margin-left: 0%;
+	grid-gap: 3px;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+.imageitem img{
+max-width: 100%;
+
+}
+
+.imageitem img{
+	transition: 0.25s;
+}
+.longimg {
+	overflow: hidden;
+	object-fit: cover;
+	margin-left: 15%;
+}
+
+.stagebkg h1{
+	margin: 0;
+}
+.showcasetitle{
+	position: static;
+	text-align: center;
+	width: 100%;
+	background: #ddd;
+	top: 48px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.imageitem img:hover{
+	transform: scale(1.25);
+	box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.8)}
+@media screen and (max-width:1920px) and (min-width:1367px){
+	.myimagegrid{
+		grid-template-columns: repeat(6, 1fr);
+	}
+	
+}
+@media screen and (max-width:1367px) and (min-width:992px){
+	.myimagegrid{
+		grid-template-columns: repeat(5, 1fr);
+	}
+	
+}
+@media screen and (max-width:991px) and (min-width:700px){
+	.myimagegrid{
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+}
+@media screen and (max-width:700px) and (min-width:480px){
+	.myimagegrid{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+}
+@media screen and (max-width:480px){
+	.myimagegrid{
+		grid-template-columns: repeat(1, 1fr);
+		margin-left: 15%;
+	}
+	
+}

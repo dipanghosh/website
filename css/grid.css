@@ -1,0 +1,65 @@
+/* CSS Document */
+.rometitle{
+	float: left;
+	margin-left: 33%;
+	clear: both;
+	margin-top: 200px;
+	color: #F7F7F7;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: 100;
+	letter-spacing: 16px;
+	font-size: 4em;
+	text-shadow: 2px 4px 10px #2A003F;
+	font-variant: small-caps;
+}
+.romeimg {
+	width: 100vw;
+	max-width: 2500px;
+	background-image: url(../rome/day1/romeTripDay1-548-2-web.jpg);
+	height: 1000px;
+	background-position: 0% 58%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.dayelement{
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 50px 150px;
+	border: 0.5px solid #d0d0d0;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	transition: 0.25s;
+}
+.daytitle{
+	text-align: center;
+	grid-column:2;
+	grid-row: 1;
+}
+.daytitle:hover{
+	text-decoration: underline;
+	
+}
+.daytext{
+	grid-column: 2;
+	grid-row: 2;
+	margin-left: 20px; 
+	color: black;
+}
+.dayelement:hover{
+	text-decoration: none;
+	box-shadow: 
+; 							-webkit-box-shadow: 2px 5px 19px rgba(59,59,59,0.43);
+	box-shadow: 2px 5px 19px rgba(59,59,59,0.43);
+}
+.dayimg{
+	max-width: 200px;
+	margin-top: 20px;
+	margin-left: 10px;
+	grid-column: 1;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+div.dayelement:last-child{
+	margin-bottom: 100px;
+}
